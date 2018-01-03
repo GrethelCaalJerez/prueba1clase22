@@ -1,0 +1,11 @@
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.exe.config
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.exe
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.pdb
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.xml
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.vbprojResolveAssemblyReference.cache
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.frmCalculadora.resources
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.Resources.resources
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.vbproj.GenerateResource.Cache
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.exe
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.xml
+C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.pdb

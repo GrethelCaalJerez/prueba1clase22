@@ -419,22 +419,21 @@ Partial Class frmCalculadora
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaption
-        Me.LinkLabel1.Location = New System.Drawing.Point(178, 336)
+        Me.LinkLabel1.Location = New System.Drawing.Point(117, 336)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(84, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(145, 13)
         Me.LinkLabel1.TabIndex = 31
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Calculadora"
-        Me.ToolTip1.SetToolTip(Me.LinkLabel1, "")
+        Me.LinkLabel1.Text = "Jorge Eduardo García Castro"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(6, 336)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(167, 13)
+        Me.Label1.Size = New System.Drawing.Size(96, 13)
         Me.Label1.TabIndex = 32
-        Me.Label1.Text = "Calculadora"
+        Me.Label1.Text = "Ir a perfil de Github"
         '
         'txtResultArea
         '
@@ -459,7 +458,7 @@ Partial Class frmCalculadora
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(244, 26)
         Me.Label2.TabIndex = 34
-        Me.Label2.Text = "Pase el mouse sobre cada elemento para obtener " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ayuda. Se puede utilizar con el " & _
+        Me.Label2.Text = "Pase el mouse sobre cada elemento para obtener " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ayuda. Se puede utilizar con el " &
     "teclado numérico."
         '
         'frmCalculadora
