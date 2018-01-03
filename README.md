@@ -26,3 +26,8 @@ El ejecutable de la calcualdora esta situado en el siguiente directorio:
 \CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.exe
 
 - Se recomienda no hacer modificaciones en los archivos con extención .config del directorio en el que se encuentra el ejecutable de la calculadora.
+
+
+# Observaciones en la compilación
+
+- Actualmente la calculadora NO calcula porcentajes usando la tecla especificada para aquello, por lo que en una futura versión de la calculadora se corregira la funcionalidad de cálculo de porcentajes.
