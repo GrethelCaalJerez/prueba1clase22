@@ -1,4 +1,4 @@
-# Calculadora Básica
+﻿# Calculadora Básica
 
 Diseño y puesta en escena de una calculadora básica, para la clase de Ingenieria de Software de la Tecnologia en Desarrollo de Software.
 
@@ -18,6 +18,7 @@ Se implementaron las siguientes funcionalidades:
 	- Resta del resultado actual al número alojado en la memoria
 	- Borrar el numero que se está ingresando actualmente
 	- Borrar toda la operacion que se está realizando actualmente
+	- Transformador de Binarios, Octetos, Decimal y Hexadecimal
 	
 # Ejecutable de la calculadora
 
