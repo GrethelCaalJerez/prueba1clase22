@@ -9,3 +9,15 @@ C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calcul
 C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.exe
 C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.xml
 C:\Users\Soporte\Documents\GitHub\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.pdb
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.exe.config
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.exe
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.pdb
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\bin\Debug\Calculadora1.0.xml
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.vbprojResolveAssemblyReference.cache
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.frmCalculadora.resources
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.Resources.resources
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.vbproj.GenerateResource.Cache
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.vbproj.CoreCompileInputs.cache
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.exe
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.xml
+C:\Users\k_ski\Documents\CalculadoraBasica\Calculadora\obj\Debug\Calculadora1.0.pdb

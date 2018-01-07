@@ -57,6 +57,21 @@ Partial Class frmCalculadora
         Me.txtResultArea = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.rbCalculadora = New System.Windows.Forms.RadioButton()
+        Me.rbBinario = New System.Windows.Forms.RadioButton()
+        Me.rbDecimal = New System.Windows.Forms.RadioButton()
+        Me.rbHexadecimal = New System.Windows.Forms.RadioButton()
+        Me.rbOctal = New System.Windows.Forms.RadioButton()
+        Me.cmdCFBinario = New System.Windows.Forms.Button()
+        Me.cmdCFDecimal = New System.Windows.Forms.Button()
+        Me.cmdCFHexadecimal = New System.Windows.Forms.Button()
+        Me.cmdCFOcteto = New System.Windows.Forms.Button()
+        Me.cmdLA = New System.Windows.Forms.Button()
+        Me.cmdLB = New System.Windows.Forms.Button()
+        Me.cmdLC = New System.Windows.Forms.Button()
+        Me.cmdLD = New System.Windows.Forms.Button()
+        Me.cmdLE = New System.Windows.Forms.Button()
+        Me.cmdLF = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtInsertArea
@@ -69,7 +84,7 @@ Partial Class frmCalculadora
         Me.txtInsertArea.Multiline = True
         Me.txtInsertArea.Name = "txtInsertArea"
         Me.txtInsertArea.ReadOnly = True
-        Me.txtInsertArea.Size = New System.Drawing.Size(259, 30)
+        Me.txtInsertArea.Size = New System.Drawing.Size(368, 30)
         Me.txtInsertArea.TabIndex = 0
         '
         'cmdFMC
@@ -78,7 +93,7 @@ Partial Class frmCalculadora
         Me.cmdFMC.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.cmdFMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFMC.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFMC.Location = New System.Drawing.Point(56, 69)
+        Me.cmdFMC.Location = New System.Drawing.Point(56, 104)
         Me.cmdFMC.Name = "cmdFMC"
         Me.cmdFMC.Size = New System.Drawing.Size(47, 39)
         Me.cmdFMC.TabIndex = 1
@@ -92,7 +107,7 @@ Partial Class frmCalculadora
         Me.cmdFMR.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.cmdFMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFMR.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFMR.Location = New System.Drawing.Point(109, 69)
+        Me.cmdFMR.Location = New System.Drawing.Point(109, 104)
         Me.cmdFMR.Name = "cmdFMR"
         Me.cmdFMR.Size = New System.Drawing.Size(47, 39)
         Me.cmdFMR.TabIndex = 2
@@ -105,7 +120,7 @@ Partial Class frmCalculadora
         Me.cmdFMS.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.cmdFMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFMS.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFMS.Location = New System.Drawing.Point(3, 69)
+        Me.cmdFMS.Location = New System.Drawing.Point(3, 104)
         Me.cmdFMS.Name = "cmdFMS"
         Me.cmdFMS.Size = New System.Drawing.Size(47, 39)
         Me.cmdFMS.TabIndex = 3
@@ -118,7 +133,7 @@ Partial Class frmCalculadora
         Me.cmdFMplus.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.cmdFMplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFMplus.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFMplus.Location = New System.Drawing.Point(162, 69)
+        Me.cmdFMplus.Location = New System.Drawing.Point(162, 104)
         Me.cmdFMplus.Name = "cmdFMplus"
         Me.cmdFMplus.Size = New System.Drawing.Size(47, 39)
         Me.cmdFMplus.TabIndex = 4
@@ -131,7 +146,7 @@ Partial Class frmCalculadora
         Me.cmdFMless.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.cmdFMless.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFMless.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFMless.Location = New System.Drawing.Point(215, 69)
+        Me.cmdFMless.Location = New System.Drawing.Point(215, 104)
         Me.cmdFMless.Name = "cmdFMless"
         Me.cmdFMless.Size = New System.Drawing.Size(47, 39)
         Me.cmdFMless.TabIndex = 5
@@ -143,9 +158,9 @@ Partial Class frmCalculadora
         Me.cmdFBack.BackColor = System.Drawing.Color.Silver
         Me.cmdFBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFBack.Font = New System.Drawing.Font("Wingdings", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
-        Me.cmdFBack.Location = New System.Drawing.Point(162, 114)
+        Me.cmdFBack.Location = New System.Drawing.Point(268, 149)
         Me.cmdFBack.Name = "cmdFBack"
-        Me.cmdFBack.Size = New System.Drawing.Size(100, 39)
+        Me.cmdFBack.Size = New System.Drawing.Size(99, 83)
         Me.cmdFBack.TabIndex = 10
         Me.cmdFBack.Text = "ß"
         Me.cmdFBack.UseVisualStyleBackColor = False
@@ -155,9 +170,9 @@ Partial Class frmCalculadora
         Me.cmdFC.BackColor = System.Drawing.Color.Silver
         Me.cmdFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFC.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFC.Location = New System.Drawing.Point(109, 114)
+        Me.cmdFC.Location = New System.Drawing.Point(162, 193)
         Me.cmdFC.Name = "cmdFC"
-        Me.cmdFC.Size = New System.Drawing.Size(47, 39)
+        Me.cmdFC.Size = New System.Drawing.Size(100, 39)
         Me.cmdFC.TabIndex = 8
         Me.cmdFC.Text = "C"
         Me.cmdFC.UseVisualStyleBackColor = False
@@ -167,9 +182,9 @@ Partial Class frmCalculadora
         Me.cmdFCE.BackColor = System.Drawing.Color.Silver
         Me.cmdFCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFCE.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFCE.Location = New System.Drawing.Point(56, 114)
+        Me.cmdFCE.Location = New System.Drawing.Point(162, 149)
         Me.cmdFCE.Name = "cmdFCE"
-        Me.cmdFCE.Size = New System.Drawing.Size(47, 39)
+        Me.cmdFCE.Size = New System.Drawing.Size(100, 39)
         Me.cmdFCE.TabIndex = 7
         Me.cmdFCE.Text = "CE"
         Me.cmdFCE.UseVisualStyleBackColor = False
@@ -179,9 +194,9 @@ Partial Class frmCalculadora
         Me.cmdFClose.BackColor = System.Drawing.Color.Pink
         Me.cmdFClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdFClose.Font = New System.Drawing.Font("Wingdings", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
-        Me.cmdFClose.Location = New System.Drawing.Point(3, 114)
+        Me.cmdFClose.Location = New System.Drawing.Point(268, 104)
         Me.cmdFClose.Name = "cmdFClose"
-        Me.cmdFClose.Size = New System.Drawing.Size(47, 39)
+        Me.cmdFClose.Size = New System.Drawing.Size(99, 39)
         Me.cmdFClose.TabIndex = 6
         Me.cmdFClose.Text = "x"
         Me.cmdFClose.UseVisualStyleBackColor = False
@@ -191,7 +206,7 @@ Partial Class frmCalculadora
         Me.cmdCFsqrt.BackColor = System.Drawing.Color.DimGray
         Me.cmdCFsqrt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFsqrt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFsqrt.Location = New System.Drawing.Point(215, 159)
+        Me.cmdCFsqrt.Location = New System.Drawing.Point(215, 238)
         Me.cmdCFsqrt.Name = "cmdCFsqrt"
         Me.cmdCFsqrt.Size = New System.Drawing.Size(47, 39)
         Me.cmdCFsqrt.TabIndex = 15
@@ -204,7 +219,7 @@ Partial Class frmCalculadora
         Me.cmdCFplus.BackColor = System.Drawing.Color.DimGray
         Me.cmdCFplus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFplus.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFplus.Location = New System.Drawing.Point(162, 159)
+        Me.cmdCFplus.Location = New System.Drawing.Point(162, 238)
         Me.cmdCFplus.Name = "cmdCFplus"
         Me.cmdCFplus.Size = New System.Drawing.Size(47, 39)
         Me.cmdCFplus.TabIndex = 14
@@ -216,7 +231,7 @@ Partial Class frmCalculadora
         Me.cmdN9.BackColor = System.Drawing.Color.DimGray
         Me.cmdN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN9.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN9.Location = New System.Drawing.Point(109, 159)
+        Me.cmdN9.Location = New System.Drawing.Point(109, 238)
         Me.cmdN9.Name = "cmdN9"
         Me.cmdN9.Size = New System.Drawing.Size(47, 39)
         Me.cmdN9.TabIndex = 13
@@ -228,7 +243,7 @@ Partial Class frmCalculadora
         Me.cmdN8.BackColor = System.Drawing.Color.DimGray
         Me.cmdN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN8.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN8.Location = New System.Drawing.Point(56, 159)
+        Me.cmdN8.Location = New System.Drawing.Point(56, 238)
         Me.cmdN8.Name = "cmdN8"
         Me.cmdN8.Size = New System.Drawing.Size(47, 39)
         Me.cmdN8.TabIndex = 12
@@ -240,7 +255,7 @@ Partial Class frmCalculadora
         Me.cmdN7.BackColor = System.Drawing.Color.DimGray
         Me.cmdN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN7.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN7.Location = New System.Drawing.Point(3, 159)
+        Me.cmdN7.Location = New System.Drawing.Point(3, 238)
         Me.cmdN7.Name = "cmdN7"
         Me.cmdN7.Size = New System.Drawing.Size(47, 39)
         Me.cmdN7.TabIndex = 11
@@ -252,7 +267,7 @@ Partial Class frmCalculadora
         Me.cmdCFperc.BackColor = System.Drawing.Color.DimGray
         Me.cmdCFperc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFperc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFperc.Location = New System.Drawing.Point(215, 204)
+        Me.cmdCFperc.Location = New System.Drawing.Point(215, 283)
         Me.cmdCFperc.Name = "cmdCFperc"
         Me.cmdCFperc.Size = New System.Drawing.Size(47, 39)
         Me.cmdCFperc.TabIndex = 20
@@ -264,7 +279,7 @@ Partial Class frmCalculadora
         Me.cmdCFless.BackColor = System.Drawing.Color.DimGray
         Me.cmdCFless.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFless.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFless.Location = New System.Drawing.Point(162, 204)
+        Me.cmdCFless.Location = New System.Drawing.Point(162, 283)
         Me.cmdCFless.Name = "cmdCFless"
         Me.cmdCFless.Size = New System.Drawing.Size(47, 39)
         Me.cmdCFless.TabIndex = 19
@@ -276,7 +291,7 @@ Partial Class frmCalculadora
         Me.cmdN6.BackColor = System.Drawing.Color.DimGray
         Me.cmdN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN6.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN6.Location = New System.Drawing.Point(109, 204)
+        Me.cmdN6.Location = New System.Drawing.Point(109, 283)
         Me.cmdN6.Name = "cmdN6"
         Me.cmdN6.Size = New System.Drawing.Size(47, 39)
         Me.cmdN6.TabIndex = 18
@@ -288,7 +303,7 @@ Partial Class frmCalculadora
         Me.cmdN5.BackColor = System.Drawing.Color.DimGray
         Me.cmdN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN5.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN5.Location = New System.Drawing.Point(56, 204)
+        Me.cmdN5.Location = New System.Drawing.Point(56, 283)
         Me.cmdN5.Name = "cmdN5"
         Me.cmdN5.Size = New System.Drawing.Size(47, 39)
         Me.cmdN5.TabIndex = 17
@@ -300,7 +315,7 @@ Partial Class frmCalculadora
         Me.cmdN4.BackColor = System.Drawing.Color.DimGray
         Me.cmdN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN4.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN4.Location = New System.Drawing.Point(3, 204)
+        Me.cmdN4.Location = New System.Drawing.Point(3, 283)
         Me.cmdN4.Name = "cmdN4"
         Me.cmdN4.Size = New System.Drawing.Size(47, 39)
         Me.cmdN4.TabIndex = 16
@@ -312,7 +327,7 @@ Partial Class frmCalculadora
         Me.cmdCFmult.BackColor = System.Drawing.Color.DimGray
         Me.cmdCFmult.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFmult.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFmult.Location = New System.Drawing.Point(162, 249)
+        Me.cmdCFmult.Location = New System.Drawing.Point(162, 328)
         Me.cmdCFmult.Name = "cmdCFmult"
         Me.cmdCFmult.Size = New System.Drawing.Size(47, 39)
         Me.cmdCFmult.TabIndex = 24
@@ -324,7 +339,7 @@ Partial Class frmCalculadora
         Me.cmdN3.BackColor = System.Drawing.Color.DimGray
         Me.cmdN3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN3.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN3.Location = New System.Drawing.Point(109, 249)
+        Me.cmdN3.Location = New System.Drawing.Point(109, 328)
         Me.cmdN3.Name = "cmdN3"
         Me.cmdN3.Size = New System.Drawing.Size(47, 39)
         Me.cmdN3.TabIndex = 23
@@ -336,7 +351,7 @@ Partial Class frmCalculadora
         Me.cmdN2.BackColor = System.Drawing.Color.DimGray
         Me.cmdN2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN2.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN2.Location = New System.Drawing.Point(56, 249)
+        Me.cmdN2.Location = New System.Drawing.Point(56, 328)
         Me.cmdN2.Name = "cmdN2"
         Me.cmdN2.Size = New System.Drawing.Size(47, 39)
         Me.cmdN2.TabIndex = 22
@@ -348,7 +363,7 @@ Partial Class frmCalculadora
         Me.cmdN1.BackColor = System.Drawing.Color.DimGray
         Me.cmdN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN1.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN1.Location = New System.Drawing.Point(3, 249)
+        Me.cmdN1.Location = New System.Drawing.Point(3, 328)
         Me.cmdN1.Name = "cmdN1"
         Me.cmdN1.Size = New System.Drawing.Size(47, 39)
         Me.cmdN1.TabIndex = 21
@@ -360,7 +375,7 @@ Partial Class frmCalculadora
         Me.cmdCFresu.BackColor = System.Drawing.Color.Silver
         Me.cmdCFresu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFresu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFresu.Location = New System.Drawing.Point(215, 249)
+        Me.cmdCFresu.Location = New System.Drawing.Point(215, 328)
         Me.cmdCFresu.Name = "cmdCFresu"
         Me.cmdCFresu.Size = New System.Drawing.Size(47, 84)
         Me.cmdCFresu.TabIndex = 30
@@ -372,7 +387,7 @@ Partial Class frmCalculadora
         Me.cmdCFdivi.BackColor = System.Drawing.Color.DimGray
         Me.cmdCFdivi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFdivi.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFdivi.Location = New System.Drawing.Point(162, 294)
+        Me.cmdCFdivi.Location = New System.Drawing.Point(162, 373)
         Me.cmdCFdivi.Name = "cmdCFdivi"
         Me.cmdCFdivi.Size = New System.Drawing.Size(47, 39)
         Me.cmdCFdivi.TabIndex = 29
@@ -384,7 +399,7 @@ Partial Class frmCalculadora
         Me.cmdNdot.BackColor = System.Drawing.Color.DimGray
         Me.cmdNdot.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdNdot.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdNdot.Location = New System.Drawing.Point(109, 294)
+        Me.cmdNdot.Location = New System.Drawing.Point(109, 373)
         Me.cmdNdot.Name = "cmdNdot"
         Me.cmdNdot.Size = New System.Drawing.Size(47, 39)
         Me.cmdNdot.TabIndex = 28
@@ -396,7 +411,7 @@ Partial Class frmCalculadora
         Me.cmdN0.BackColor = System.Drawing.Color.DimGray
         Me.cmdN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdN0.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdN0.Location = New System.Drawing.Point(56, 294)
+        Me.cmdN0.Location = New System.Drawing.Point(56, 373)
         Me.cmdN0.Name = "cmdN0"
         Me.cmdN0.Size = New System.Drawing.Size(47, 39)
         Me.cmdN0.TabIndex = 27
@@ -408,7 +423,7 @@ Partial Class frmCalculadora
         Me.cmdCFTogglePosNeg.BackColor = System.Drawing.Color.DimGray
         Me.cmdCFTogglePosNeg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCFTogglePosNeg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCFTogglePosNeg.Location = New System.Drawing.Point(3, 294)
+        Me.cmdCFTogglePosNeg.Location = New System.Drawing.Point(3, 373)
         Me.cmdCFTogglePosNeg.Name = "cmdCFTogglePosNeg"
         Me.cmdCFTogglePosNeg.Size = New System.Drawing.Size(47, 39)
         Me.cmdCFTogglePosNeg.TabIndex = 26
@@ -419,7 +434,7 @@ Partial Class frmCalculadora
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaption
-        Me.LinkLabel1.Location = New System.Drawing.Point(117, 336)
+        Me.LinkLabel1.Location = New System.Drawing.Point(222, 415)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(145, 13)
         Me.LinkLabel1.TabIndex = 31
@@ -429,7 +444,7 @@ Partial Class frmCalculadora
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 336)
+        Me.Label1.Location = New System.Drawing.Point(6, 415)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 13)
         Me.Label1.TabIndex = 32
@@ -444,7 +459,7 @@ Partial Class frmCalculadora
         Me.txtResultArea.Multiline = True
         Me.txtResultArea.Name = "txtResultArea"
         Me.txtResultArea.ReadOnly = True
-        Me.txtResultArea.Size = New System.Drawing.Size(259, 30)
+        Me.txtResultArea.Size = New System.Drawing.Size(368, 30)
         Me.txtResultArea.TabIndex = 33
         Me.txtResultArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -453,21 +468,214 @@ Partial Class frmCalculadora
         '
         'Label2
         '
+        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 356)
+        Me.Label2.Location = New System.Drawing.Point(6, 435)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(244, 26)
         Me.Label2.TabIndex = 34
         Me.Label2.Text = "Pase el mouse sobre cada elemento para obtener " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ayuda. Se puede utilizar con el " &
     "teclado numérico."
         '
+        'rbCalculadora
+        '
+        Me.rbCalculadora.AutoSize = True
+        Me.rbCalculadora.Checked = True
+        Me.rbCalculadora.Location = New System.Drawing.Point(3, 69)
+        Me.rbCalculadora.Name = "rbCalculadora"
+        Me.rbCalculadora.Size = New System.Drawing.Size(81, 17)
+        Me.rbCalculadora.TabIndex = 35
+        Me.rbCalculadora.TabStop = True
+        Me.rbCalculadora.Text = "Calculadora"
+        Me.rbCalculadora.UseVisualStyleBackColor = True
+        '
+        'rbBinario
+        '
+        Me.rbBinario.AutoSize = True
+        Me.rbBinario.Location = New System.Drawing.Point(90, 69)
+        Me.rbBinario.Name = "rbBinario"
+        Me.rbBinario.Size = New System.Drawing.Size(57, 17)
+        Me.rbBinario.TabIndex = 36
+        Me.rbBinario.Text = "Binario"
+        Me.rbBinario.UseVisualStyleBackColor = True
+        '
+        'rbDecimal
+        '
+        Me.rbDecimal.AutoSize = True
+        Me.rbDecimal.Location = New System.Drawing.Point(154, 69)
+        Me.rbDecimal.Name = "rbDecimal"
+        Me.rbDecimal.Size = New System.Drawing.Size(63, 17)
+        Me.rbDecimal.TabIndex = 37
+        Me.rbDecimal.Text = "Decimal"
+        Me.rbDecimal.UseVisualStyleBackColor = True
+        '
+        'rbHexadecimal
+        '
+        Me.rbHexadecimal.AutoSize = True
+        Me.rbHexadecimal.Location = New System.Drawing.Point(224, 69)
+        Me.rbHexadecimal.Name = "rbHexadecimal"
+        Me.rbHexadecimal.Size = New System.Drawing.Size(86, 17)
+        Me.rbHexadecimal.TabIndex = 38
+        Me.rbHexadecimal.Text = "Hexadecimal"
+        Me.rbHexadecimal.UseVisualStyleBackColor = True
+        '
+        'rbOctal
+        '
+        Me.rbOctal.AutoSize = True
+        Me.rbOctal.Location = New System.Drawing.Point(317, 70)
+        Me.rbOctal.Name = "rbOctal"
+        Me.rbOctal.Size = New System.Drawing.Size(50, 17)
+        Me.rbOctal.TabIndex = 39
+        Me.rbOctal.Text = "Octal"
+        Me.rbOctal.UseVisualStyleBackColor = True
+        '
+        'cmdCFBinario
+        '
+        Me.cmdCFBinario.BackColor = System.Drawing.Color.Silver
+        Me.cmdCFBinario.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.cmdCFBinario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdCFBinario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCFBinario.Location = New System.Drawing.Point(268, 238)
+        Me.cmdCFBinario.Name = "cmdCFBinario"
+        Me.cmdCFBinario.Size = New System.Drawing.Size(99, 39)
+        Me.cmdCFBinario.TabIndex = 40
+        Me.cmdCFBinario.Text = "Binario"
+        Me.cmdCFBinario.UseVisualStyleBackColor = False
+        '
+        'cmdCFDecimal
+        '
+        Me.cmdCFDecimal.BackColor = System.Drawing.Color.Silver
+        Me.cmdCFDecimal.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.cmdCFDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdCFDecimal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCFDecimal.Location = New System.Drawing.Point(268, 283)
+        Me.cmdCFDecimal.Name = "cmdCFDecimal"
+        Me.cmdCFDecimal.Size = New System.Drawing.Size(99, 39)
+        Me.cmdCFDecimal.TabIndex = 41
+        Me.cmdCFDecimal.Text = "Decimal"
+        Me.cmdCFDecimal.UseVisualStyleBackColor = False
+        '
+        'cmdCFHexadecimal
+        '
+        Me.cmdCFHexadecimal.BackColor = System.Drawing.Color.Silver
+        Me.cmdCFHexadecimal.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.cmdCFHexadecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdCFHexadecimal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCFHexadecimal.Location = New System.Drawing.Point(268, 328)
+        Me.cmdCFHexadecimal.Name = "cmdCFHexadecimal"
+        Me.cmdCFHexadecimal.Size = New System.Drawing.Size(99, 39)
+        Me.cmdCFHexadecimal.TabIndex = 42
+        Me.cmdCFHexadecimal.Text = "Hexade"
+        Me.cmdCFHexadecimal.UseVisualStyleBackColor = False
+        '
+        'cmdCFOcteto
+        '
+        Me.cmdCFOcteto.BackColor = System.Drawing.Color.Silver
+        Me.cmdCFOcteto.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.cmdCFOcteto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdCFOcteto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCFOcteto.Location = New System.Drawing.Point(268, 373)
+        Me.cmdCFOcteto.Name = "cmdCFOcteto"
+        Me.cmdCFOcteto.Size = New System.Drawing.Size(99, 39)
+        Me.cmdCFOcteto.TabIndex = 43
+        Me.cmdCFOcteto.Text = "Octal"
+        Me.cmdCFOcteto.UseVisualStyleBackColor = False
+        '
+        'cmdLA
+        '
+        Me.cmdLA.BackColor = System.Drawing.Color.DimGray
+        Me.cmdLA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdLA.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLA.Location = New System.Drawing.Point(3, 148)
+        Me.cmdLA.Name = "cmdLA"
+        Me.cmdLA.Size = New System.Drawing.Size(47, 39)
+        Me.cmdLA.TabIndex = 44
+        Me.cmdLA.Text = "A"
+        Me.cmdLA.UseVisualStyleBackColor = False
+        '
+        'cmdLB
+        '
+        Me.cmdLB.BackColor = System.Drawing.Color.DimGray
+        Me.cmdLB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdLB.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLB.Location = New System.Drawing.Point(56, 148)
+        Me.cmdLB.Name = "cmdLB"
+        Me.cmdLB.Size = New System.Drawing.Size(47, 39)
+        Me.cmdLB.TabIndex = 45
+        Me.cmdLB.Text = "B"
+        Me.cmdLB.UseVisualStyleBackColor = False
+        '
+        'cmdLC
+        '
+        Me.cmdLC.BackColor = System.Drawing.Color.DimGray
+        Me.cmdLC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdLC.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLC.Location = New System.Drawing.Point(109, 148)
+        Me.cmdLC.Name = "cmdLC"
+        Me.cmdLC.Size = New System.Drawing.Size(47, 39)
+        Me.cmdLC.TabIndex = 46
+        Me.cmdLC.Text = "C"
+        Me.cmdLC.UseVisualStyleBackColor = False
+        '
+        'cmdLD
+        '
+        Me.cmdLD.BackColor = System.Drawing.Color.DimGray
+        Me.cmdLD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdLD.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLD.Location = New System.Drawing.Point(3, 193)
+        Me.cmdLD.Name = "cmdLD"
+        Me.cmdLD.Size = New System.Drawing.Size(47, 39)
+        Me.cmdLD.TabIndex = 47
+        Me.cmdLD.Text = "D"
+        Me.cmdLD.UseVisualStyleBackColor = False
+        '
+        'cmdLE
+        '
+        Me.cmdLE.BackColor = System.Drawing.Color.DimGray
+        Me.cmdLE.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdLE.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLE.Location = New System.Drawing.Point(56, 193)
+        Me.cmdLE.Name = "cmdLE"
+        Me.cmdLE.Size = New System.Drawing.Size(47, 39)
+        Me.cmdLE.TabIndex = 48
+        Me.cmdLE.Text = "E"
+        Me.cmdLE.UseVisualStyleBackColor = False
+        '
+        'cmdLF
+        '
+        Me.cmdLF.BackColor = System.Drawing.Color.DimGray
+        Me.cmdLF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdLF.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLF.Location = New System.Drawing.Point(109, 193)
+        Me.cmdLF.Name = "cmdLF"
+        Me.cmdLF.Size = New System.Drawing.Size(47, 39)
+        Me.cmdLF.TabIndex = 49
+        Me.cmdLF.Text = "F"
+        Me.cmdLF.UseVisualStyleBackColor = False
+        '
         'frmCalculadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(265, 386)
+        Me.ClientSize = New System.Drawing.Size(374, 502)
         Me.ControlBox = False
+        Me.Controls.Add(Me.cmdLF)
+        Me.Controls.Add(Me.cmdLE)
+        Me.Controls.Add(Me.cmdLD)
+        Me.Controls.Add(Me.cmdLC)
+        Me.Controls.Add(Me.cmdLB)
+        Me.Controls.Add(Me.cmdLA)
+        Me.Controls.Add(Me.cmdCFOcteto)
+        Me.Controls.Add(Me.cmdCFHexadecimal)
+        Me.Controls.Add(Me.cmdCFDecimal)
+        Me.Controls.Add(Me.cmdCFBinario)
+        Me.Controls.Add(Me.rbOctal)
+        Me.Controls.Add(Me.rbHexadecimal)
+        Me.Controls.Add(Me.rbDecimal)
+        Me.Controls.Add(Me.rbBinario)
+        Me.Controls.Add(Me.rbCalculadora)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtResultArea)
         Me.Controls.Add(Me.Label1)
@@ -543,5 +751,19 @@ Partial Class frmCalculadora
     Friend WithEvents txtResultArea As System.Windows.Forms.TextBox
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents Label2 As System.Windows.Forms.Label
-
+    Friend WithEvents rbCalculadora As RadioButton
+    Friend WithEvents rbBinario As RadioButton
+    Friend WithEvents rbDecimal As RadioButton
+    Friend WithEvents rbHexadecimal As RadioButton
+    Friend WithEvents rbOctal As RadioButton
+    Friend WithEvents cmdCFBinario As Button
+    Friend WithEvents cmdCFDecimal As Button
+    Friend WithEvents cmdCFHexadecimal As Button
+    Friend WithEvents cmdCFOcteto As Button
+    Friend WithEvents cmdLA As Button
+    Friend WithEvents cmdLB As Button
+    Friend WithEvents cmdLC As Button
+    Friend WithEvents cmdLD As Button
+    Friend WithEvents cmdLE As Button
+    Friend WithEvents cmdLF As Button
 End Class
